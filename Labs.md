@@ -136,7 +136,7 @@ Legenda:
 1. Kalinowski Damian
 1. Katovich Darya
 1. [Kawa Piotr](https://gitlab.com/aurustius)
-1. Knitter Mateusz
+1. [Knitter Mateusz](https://github.com/supperbull/RubyMateuszKnitter)
 1. Lewandowski Rafał
 1. Luszuk Paweł
 1. Majewski Sebastian
