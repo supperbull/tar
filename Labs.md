@@ -106,6 +106,7 @@ Legenda:
 
 ### Grupa 1
 
+[Wojciech Łojkowski i Kacper Narożnik](https://github.com/knaroznik/Ruby_GameOfLife)
 
 
 ### Grupa 2
