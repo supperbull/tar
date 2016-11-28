@@ -44,7 +44,8 @@ class Money
   # This is a version of sum that works with different currencies.
   # Returns an array of Money instances, one for each currency that appeared
   # in the input array.
-  def self.sum(moneys)
-    moneys.group_by(&:currency).values.map(&:sum)
+  def self.sum(products)
+    # products.group_by(&:currency).values.map(&:sum)
+    products.map(&:price).group_by(&:currency).values.map(&:sum)
   end
 end

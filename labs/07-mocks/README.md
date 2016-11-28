@@ -67,6 +67,7 @@ Money.sum [pl, us, pl]
 
 * _money_spec.rb_ – `let`, `subject`
 * _order_spec.rb_ – more examples of `let` and `subject`
+* _product.rb_ – ensure isolation
 
 ```ruby
 $LOAD_PATH.unshift File.join(__dir__, 'lib')
@@ -76,4 +77,19 @@ require 'order'
 pl = Money.new 10, 'PLN'
 order = Order.new 'FOO', '2016-11-28', [pl, pl * 4]
 order.total_amount
+```
+
+Do you see problems in the code below?
+
+```ruby
+$LOAD_PATH.unshift File.join(__dir__, 'lib')
+require 'product'
+require 'order'
+require 'money'
+
+p1 = Product.new 'beer', Money.new(2, 'USD')
+p2 = Product.new 'beer', Money.new(9, 'PLN')
+
+order = Order.new 'Biedronka', '2016-11-28', [p1, p2, p1, p1]
+Money.sum order.products
 ```
