@@ -108,5 +108,6 @@ Legenda:
 
 [Wojciech Łojkowski i Kacper Narożnik](https://github.com/knaroznik/Ruby_GameOfLife)
 
-
 ### Grupa 2
+
+[Mateusz Gawin, Jakub Jabłoński, Daria Kotowicz i Magdalena Jędzierowska](https://github.com/matgawin/ruby-projekt2)
