@@ -85,8 +85,7 @@ Money.sum order.products
 TODO
 
 
-
-### Unit tests
+## Unit tests
 
 * _money_spec.rb_ – `let`, `subject`
 * _order_spec.rb_ – more examples of `let` and `subject`
