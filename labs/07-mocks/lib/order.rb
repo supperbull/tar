@@ -1,5 +1,5 @@
 # require 'product'
-require 'extend_enumerable'
+# require 'extend_enumerable'
 
 class Order
   # products -- a list of monies

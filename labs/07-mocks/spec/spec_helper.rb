@@ -1,4 +1,4 @@
-# require_relative '../lib/report'
+require 'extend_enumerable'
 
 RSpec.configure do |config|
   config.expect_with :rspec do |expectations|
