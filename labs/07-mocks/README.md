@@ -1,5 +1,8 @@
 ## Mocks, stubs and spies
 
+The purpose of the __bin/console__  script is to make experimenting
+with this project easier.
+
 ```
 spec/
 ├── integration
@@ -8,26 +11,13 @@ spec/
 ├── spec_helper.rb
 └── unit
     ├── money_spec.rb
+    └── product_spec.rb
     └── order_spec.rb
 
 bundle exec rspec
 ```
 
-Check `LOAD_PATH` on the command line:
-```sh
-ruby -e 'puts $LOAD_PATH'
-```
-or in _irb_:
-```ruby
-puts $LOAD_PATH
-```
-
-Add _lib_ directory to Ruby `LOAD_PATH`:
-```ruby
-$LOAD_PATH.unshift File.join(__dir__, 'lib')
-```
-
-Currencies from _exchange_rate.csv_:
+The _exchange_rate.csv_ file contains data used in some tests.
 
 | Currency | Exchange Rate |
 | -------- | -------------:|
@@ -38,16 +28,20 @@ Currencies from _exchange_rate.csv_:
 
 ### Explore _money.rb_ and _order.rb_ in _irb_
 
+First check if unit test are working.
 ```sh
 bundle exec rspec -fd spec/unit
+bundle exec rspec -fd spec/integration # TODO
 ```
 
-Ruby console _irb_:
+Next run
+```sh
+bin/console_
+```
+
+### Experimenting with _Money_
 
 ```ruby
-$LOAD_PATH.unshift File.join(__dir__, 'lib')
-require 'money'
-
 pl = Money.new 100, 'PLN'
 us = Money.new 100, 'USD'
 pl.value
@@ -63,33 +57,53 @@ Money.sum [pl, us, pl]
 ```
 
 
+### Experimenting with _Product_
+
+On _bin/console_ run this code.
+
+```ruby
+pl = Money.new 10, 'PLN'
+order = Order.new 'FOO', '2016-11-28', [pl, pl * 4]
+order.total_amount
+```
+
+TODO
+
+
+### Experimenting with _Order_
+
+Do you see problems in the code below?
+
+```ruby
+p1 = Product.new 'beer', Money.new(2, 'USD')
+p2 = Product.new 'beer', Money.new(9, 'PLN')
+
+order = Order.new 'Biedronka', '2016-11-28', [p1, p2, p1, p1]
+Money.sum order.products
+```
+
+TODO
+
+
+
 ### Unit tests
 
 * _money_spec.rb_ – `let`, `subject`
 * _order_spec.rb_ – more examples of `let` and `subject`
 * _product.rb_ – ensure isolation
 
-```ruby
-$LOAD_PATH.unshift File.join(__dir__, 'lib')
-require 'money'
-require 'order'
 
-pl = Money.new 10, 'PLN'
-order = Order.new 'FOO', '2016-11-28', [pl, pl * 4]
-order.total_amount
+
+
+## FAQ
+
+1\. _require_ 'something' does not work.
+
+Check `LOAD_PATH` on the command line:
+```sh
+ruby -e 'puts $LOAD_PATH'
 ```
-
-Do you see problems in the code below?
-
+or in _irb_:
 ```ruby
-$LOAD_PATH.unshift File.join(__dir__, 'lib')
-require 'product'
-require 'order'
-require 'money'
-
-p1 = Product.new 'beer', Money.new(2, 'USD')
-p2 = Product.new 'beer', Money.new(9, 'PLN')
-
-order = Order.new 'Biedronka', '2016-11-28', [p1, p2, p1, p1]
-Money.sum order.products
+puts $LOAD_PATH
 ```
