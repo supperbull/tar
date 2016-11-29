@@ -36,7 +36,7 @@ bundle exec rspec -fd spec/integration # TODO
 
 Next run
 ```sh
-bin/console_
+bin/console
 ```
 
 ### Experimenting with _Money_
