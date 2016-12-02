@@ -1,5 +1,7 @@
 ## Mocks, stubs and spies
 
+![yunin](images/yunin.png)
+
 The purpose of the __bin/console__  script is to make experimenting
 with this project easier.
 
