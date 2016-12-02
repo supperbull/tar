@@ -6,6 +6,8 @@ describe Order do
   let(:full_name) { 'Biedronka' }
   let(:date) { '2016-12-02' }
 
+  # see also rspec-collection_matchers
+
   context '#products' do
     # lazy evaluation of list
     context 'without products' do
