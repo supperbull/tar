@@ -1,11 +1,13 @@
 ## Mocks, stubs and spies
 
+Jak obsługiwać rachunki takie jak niżej, ale z produktami o cenach w różnych
+walutach.
+
 ![yunin](images/yunin.png)
 
-The purpose of the __bin/console__  script is to make experimenting
-with this project easier.
-
 ```
+bin/
+├── console
 spec/
 ├── integration
 │   ├── exchange_money_spec.rb
@@ -19,13 +21,23 @@ spec/
 bundle exec rspec
 ```
 
-The _exchange_rate.csv_ file contains data used in some tests.
+The purpose of the _*bin/console*_ script is to make experimenting
+with this project easier. The script is a customization of
+the script with the same name from the generated gem scaffold project:
+```sh
+bundle gem wallet
+```
+
+----
+
+The _exchange_rate_2016-12-02.csv_ file contains data used in some tests.
 
 | Currency | Exchange Rate |
 | -------- | -------------:|
-| EUR      | 1.00          |
-| PLN      | 4.42          |
-| USD      | 4.18          |
+| EUR      | 4.50          |
+| PLN      | 1.00          |
+| USD      | 4.22          |
+
 
 
 ### Explore _money.rb_ and _order.rb_ in _irb_
@@ -33,7 +45,7 @@ The _exchange_rate.csv_ file contains data used in some tests.
 First check if unit test are working.
 ```sh
 bundle exec rspec -fd spec/unit
-bundle exec rspec -fd spec/integration # TODO
+# bundle exec rspec -fd spec/integration
 ```
 
 Next run
@@ -44,8 +56,13 @@ bin/console
 ### Experimenting with _Money_
 
 ```ruby
-pl = Money.new 100, 'PLN'
-us = Money.new 100, 'USD'
+pl = Money.new 10, 'PLN'
+us = Money.new 10, 'USD'
+```
+
+```ruby
+ls # Pry
+
 pl.value
 pl.currency
 us.currency
@@ -53,6 +70,8 @@ us.currency
 pl.to_s
 pl * 5
 pl + pl
+
+show-source Order # Pry
 
 Money.sum [pl, pl * 4]
 Money.sum [pl, us, pl]
