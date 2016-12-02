@@ -1,4 +1,4 @@
-# require 'extend_enumerable'
+require 'extend_enumerable'
 
 class Money
   attr_reader :value, :currency
@@ -45,7 +45,6 @@ class Money
   # Returns an array of Money instances, one for each currency that appeared
   # in the input array.
   def self.sum(arr)
-    return 0 if arr.empty?
     arr.group_by(&:currency).values.map(&:sum)
   end
 end
