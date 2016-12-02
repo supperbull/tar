@@ -5,6 +5,7 @@ RSpec.describe Product do
     product = instance_double('product', name: 'beer')
     expect(product.name).to eq 'beer'
   end
+
   it '#price' do
     money = instance_double('money', currency: 'USD', value: 10)
     product = instance_double('product', price: money)
