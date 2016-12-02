@@ -40,14 +40,13 @@ The _exchange_rate_2016-12-02.csv_ file contains data used in some tests.
 
 
 
-### Explore _money.rb_ and _order.rb_ in _irb_
+### Explore classes in _bin/console_
 
 First check if unit test are working.
 ```sh
 bundle exec rspec -fd spec/unit
 # bundle exec rspec -fd spec/integration
 ```
-
 Next run
 ```sh
 bin/console
@@ -71,44 +70,39 @@ pl.to_s
 pl * 5
 pl + pl
 
-show-source Order # Pry
+show-source Money # Pry
 
-Money.sum [pl, pl * 4]
-Money.sum [pl, us, pl]
+Money.sum [pl, pl*4, pl]
+Money.sum [pl*2, us, us*4, pl]
 ```
 
 
 ### Experimenting with _Product_
 
-On _bin/console_ run this code.
-
 ```ruby
-pl = Money.new 10, 'PLN'
-order = Order.new 'FOO', '2016-11-28', [pl, pl * 4]
-order.total_amount
-```
+pln1 = Money.new 1.00, 'PLN'
 
-TODO
+pl1 = Product.new 'chleb swojski', pln1 * 8
+pl2 = Product.new 'jaja eko', pln1 * 12
+pl3 = Product.new 'kechap łagodny', pln1 * 9.90
+
+us1 = Product.new 'butter eco', Money.new(2, 'EUR')
+us2 = Product.new 'sausages', Money.new(4, 'EUR')
+```
 
 
 ### Experimenting with _Order_
 
+
 Do you see problems in the code below?
 
 ```ruby
-def self.sum(products)
-  # products.group_by(&:currency).values.map(&:sum)
-  products.map(&:price).group_by(&:currency).values.map(&:sum)
-end
+opl = Order.new 'Yunin', '2016-12-02', [pl1, pl2]
+opl.add pl3
+ous = Order.new 'Yunin', '2016-12-02', [us1, us2]
 
-p1 = Product.new 'beer', Money.new(2, 'USD')
-p2 = Product.new 'beer', Money.new(9, 'PLN')
-
-order = Order.new 'Biedronka', '2016-11-28', [p1, p2, p1, p1]
-Money.sum order.products
+order = Order.new 'Biedronka', '2016-12-02', [us1, pl1, pl3, us2]
 ```
-
-TODO
 
 
 ## Unit tests
@@ -116,8 +110,6 @@ TODO
 * _money_spec.rb_ – `let`, `subject`
 * _order_spec.rb_ – more examples of `let` and `subject`
 * _product.rb_ – ensure isolation
-
-
 
 
 ## FAQ

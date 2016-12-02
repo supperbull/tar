@@ -13,10 +13,6 @@ require 'wallet'
 require 'pry'
 Pry.start
 
-# require 'irb'
-# IRB.start
-
 # Pry commands:
-#
 #   ls
 #   show-source Order
