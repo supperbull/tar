@@ -93,15 +93,13 @@ us2 = Product.new 'sausages', Money.new(4, 'EUR')
 
 ### Experimenting with _Order_
 
-
-Do you see problems in the code below?
-
 ```ruby
 opl = Order.new 'Yunin', '2016-12-02', [pl1, pl2]
 opl.add pl3
 ous = Order.new 'Yunin', '2016-12-02', [us1, us2]
 
 order = Order.new 'Biedronka', '2016-12-02', [us1, pl1, pl3, us2]
+Order.sum order
 ```
 
 
