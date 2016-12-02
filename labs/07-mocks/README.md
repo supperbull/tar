@@ -110,6 +110,12 @@ Order.sum order
 * _product.rb_ – ensure isolation
 
 
+## TODO
+
+* _Exchange_
+* _Report_
+
+
 ## FAQ
 
 1\. _require_ 'something' does not work.
