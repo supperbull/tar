@@ -96,6 +96,11 @@ TODO
 Do you see problems in the code below?
 
 ```ruby
+def self.sum(products)
+  # products.group_by(&:currency).values.map(&:sum)
+  products.map(&:price).group_by(&:currency).values.map(&:sum)
+end
+
 p1 = Product.new 'beer', Money.new(2, 'USD')
 p2 = Product.new 'beer', Money.new(9, 'PLN')
 

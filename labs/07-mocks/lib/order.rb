@@ -1,5 +1,4 @@
-# require 'product'
-# require 'extend_enumerable'
+require 'extend_enumerable'
 
 class Order
   # products -- a list of monies
@@ -9,10 +8,5 @@ class Order
     @full_name = full_name
     @date = date
     @products = products
-  end
-
-  def total_amount
-    return 0 if products.empty?
-    products.map(&:value).sum
   end
 end
