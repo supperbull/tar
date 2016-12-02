@@ -1,14 +1,15 @@
 require 'order'
 
 describe Order do
+  subject { Order.new(full_name, date, list).products }
+
   let(:full_name) { 'Biedronka' }
-  let(:date) { '2016-11-27T00:00:00+01:00' }
-  subject { Order.new(full_name, date, products).products }
+  let(:date) { '2016-12-02' }
 
   context '#products' do
-    # lazy evaluation of product
+    # lazy evaluation of list
     context 'without products' do
-      let(:products) { [] }
+      let(:list) { [] }
 
       it 'returns empty array' do
         expect(subject).to eq []
@@ -16,10 +17,10 @@ describe Order do
     end
 
     context 'with products' do
-      let(:products) { [double] }
+      let(:list) { [double, double] }
 
       it 'returns array of objects' do
-        expect(subject).to eq products
+        expect(subject).to be_kind_of(Array)
       end
     end
   end
