@@ -27,6 +27,9 @@ describe Order do
     end
   end
 
+  # def self.sum(arr)
+  #   Money.sum arr.products.map(&:price)
+  # end
   context '.sum' do
     pending 'should be tested in integration'
   end
