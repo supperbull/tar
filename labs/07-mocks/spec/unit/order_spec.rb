@@ -1,6 +1,6 @@
 require 'order'
 
-# https://relishapp.com/rspec/rspec-mocks/v/3-5/docs/verifying-doubles/using-an-instance-double
+# https://relishapp.com/rspec/rspec-mocks/v/3-5/docs/verifying-doubles
 
 describe Order do
   subject { Order.new(full_name, date, list) }
@@ -43,6 +43,9 @@ describe Order do
       let(:list) { [product, product] }
 
       it 'returns array of Monies' do
+        # https://github.com/rspec/rspec-collection_matchers
+        # -> add rspec-collection_matchers to spec_helper.rb
+        expect(subject.monies).to have_exactly(2).items
         expect(subject.monies).to be_kind_of(Array)
       end
     end

@@ -99,6 +99,7 @@ opl.add pl3
 ous = Order.new 'Yunin', '2016-12-02', [us1, us2]
 
 order = Order.new 'Biedronka', '2016-12-02', [us1, pl1, pl3, us2]
+
 Money.sum order.monies
 ```
 
