@@ -99,15 +99,16 @@ opl.add pl3
 ous = Order.new 'Yunin', '2016-12-02', [us1, us2]
 
 order = Order.new 'Biedronka', '2016-12-02', [us1, pl1, pl3, us2]
-Order.sum order.monies
+Money.sum order.monies
 ```
 
 
 ## Unit tests
 
 * _money_spec.rb_ – `let`, `subject`
-* _order_spec.rb_ – more examples of `let` and `subject`
-* _product.rb_ – ensure isolation
+* _product.rb_ – ensure isolation TODO
+* _order_spec.rb_ – more examples of `let` and `subject`,
+  [Verifying Doubles](https://relishapp.com/rspec/rspec-mocks/v/3-5/docs/verifying-doubles/using-an-instance-double)
 
 
 ## TODO
