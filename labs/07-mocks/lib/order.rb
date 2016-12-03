@@ -13,11 +13,10 @@ class Order
     products.push product
   end
 
-  def monies
-    products.map(&:price)
-  end
-
   # def self.sum(arr)
   #   Money.sum arr.products.map(&:price)
   # end
+  def monies
+    products.map(&:price)
+  end
 end
