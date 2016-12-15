@@ -153,6 +153,8 @@ Continuous Integration and Deployment:
 
 1. [Codeship](https://www.codeship.io/).
 1. [Travis](https://travis-ci.org/) – niestety usługa płatna dla repozytoriów prywatnych.
+1. [Code Climate](https://codeclimate.com/) – healthy code ships faster.
+  - [Deciphering Ruby Code Metrics](http://blog.codeclimate.com/blog/2013/08/07/deciphering-ruby-code-metrics/)
 
 
 Fajne:
