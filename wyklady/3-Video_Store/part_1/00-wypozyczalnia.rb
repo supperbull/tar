@@ -45,7 +45,7 @@ class Customer
   end
 
   def statement
-    total_amount = 0
+    total_amount = 0.0
     frequent_renter_points = 0
     result = "Rental Record for #{@name}\n"
 
@@ -79,12 +79,14 @@ end
 
 # przyklad uzycia
 
-movie1 = Movie.new('Milion sposobów, jak zginąć na Zachodzie', Movie::NEW_RELEASE)
-movie2 = Movie.new('Uśpieni', Movie::CHILDRENS)
+if __FILE__ == $PROGRAM_NAME
+  movie1 = Movie.new('Milion sposobów, jak zginąć na Zachodzie', Movie::NEW_RELEASE)
+  movie2 = Movie.new('Uśpieni', Movie::CHILDRENS)
 
-customer = Customer.new 'Włodek'
+  customer = Customer.new 'Włodek'
 
-customer.add_rental Rental.new(movie1, 4)
-customer.add_rental Rental.new(movie2, 6)
+  customer.add_rental Rental.new(movie1, 4)
+  customer.add_rental Rental.new(movie2, 6)
 
-puts customer.statement
+  puts customer.statement
+end
