@@ -77,7 +77,7 @@ class Customer
   #   result
   # end
   def total_charge
-    @rentals.inject(0) { |acc, rental| acc += rental.charge }
+    @rentals.inject(0) { |acc, elem| acc += elem.charge }
   end
 end
 
