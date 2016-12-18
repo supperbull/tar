@@ -7,7 +7,8 @@ class Movie
   attr_accessor :price_code
 
   def initialize(title, price_code)
-    @title, @price_code = title, price_code
+    @title = title
+    @price_code = price_code
   end
 end
 
@@ -15,7 +16,8 @@ class Rental
   attr_reader :movie, :days_rented
 
   def initialize(movie, days_rented)
-    @movie, @days_rented = movie, days_rented
+    @movie = movie
+    @days_rented = days_rented
   end
 
   def charge
@@ -34,7 +36,7 @@ class Rental
   end
 
   def frequent_renter_points
-    (movie.price_code == Movie::NEW_RELEASE && days_rented > 1) ? 2 : 1
+    movie.price_code == Movie::NEW_RELEASE && days_rented > 1 ? 2 : 1
   end
 end
 
@@ -51,7 +53,8 @@ class Customer
   end
 
   def statement
-    total_amount, frequent_renter_points = 0.0, 0
+    total_amount = 0.0
+    frequent_renter_points = 0
     result = "Rental Record for #{@name}\n"
 
     @rentals.each do |element|
@@ -71,10 +74,10 @@ end
 
 # przykład użycia
 
-movie1 = Movie.new("Milion sposobów, jak zginąć na Zachodzie", Movie::NEW_RELEASE)
-movie2 = Movie.new("Uśpieni", Movie::CHILDRENS)
+movie1 = Movie.new('Milion sposobów, jak zginąć na Zachodzie', Movie::NEW_RELEASE)
+movie2 = Movie.new('Uśpieni', Movie::CHILDRENS)
 
-customer = Customer.new "Włodek"
+customer = Customer.new 'Włodek'
 
 customer.add_rental Rental.new(movie1, 4)
 customer.add_rental Rental.new(movie2, 6)
