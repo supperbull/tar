@@ -79,11 +79,11 @@ class Customer
   private
 
   def total_charge
-    @rentals.inject(0) { |sum, rental| sum += rental.charge }
+    @rentals.inject(0) { |acc, rental| acc += rental.charge }
   end
 
   def total_frequent_renter_points
-    @rentals.inject(0) { |sum, rental| sum += rental.frequent_renter_points }
+    @rentals.inject(0) { |acc, rental| acc += rental.frequent_renter_points }
   end
 end
 
