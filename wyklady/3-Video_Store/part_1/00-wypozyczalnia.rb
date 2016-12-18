@@ -77,7 +77,7 @@ class Customer
   end
 end
 
-# przyklad uzycia
+# przyklad użycia
 
 if __FILE__ == $PROGRAM_NAME
   movie1 = Movie.new('Milion sposobów, jak zginąć na Zachodzie', Movie::NEW_RELEASE)
