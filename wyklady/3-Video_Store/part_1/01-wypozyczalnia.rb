@@ -71,7 +71,7 @@ class Customer
   end
 end
 
-# przyklad użycia
+# przykład użycia
 
 movie1 = Movie.new('Milion sposobów, jak zginąć na Zachodzie', Movie::NEW_RELEASE)
 movie2 = Movie.new('Uśpieni', Movie::CHILDRENS)
