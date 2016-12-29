@@ -1,5 +1,9 @@
 ## Laboratoria  2016/17
 
+> Please make sure basic things like spacing, variable naming conventions, line endings, spaces instead of tabs, and the like follow the general style of the project. 
+>
+> J. Geerling, [Why I close PRs (project maintainer notes)](http://www.jeffgeerling.com/blog/2016/why-i-close-prs-oss-project-maintainer-notes)
+
 Terminy rozliczania się z zadań i projektu na egzamin:
 
 | Zadanie | Opis       | Ostateczny termin | Poprawka   |
