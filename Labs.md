@@ -111,6 +111,7 @@ Legenda:
 ### Grupa 1
 
 1. [Wojciech Łojkowski i Kacper Narożnik](https://github.com/knaroznik/Ruby_GameOfLife)
+2. [Jakub Łąkowski](https://github.com/kubalakowski/projekt_ruby)
 
 
 ### Grupa 2
