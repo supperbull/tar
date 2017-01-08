@@ -121,3 +121,4 @@ Legenda:
 1. [Patryk Adler, Michał Byszof, Maksymilian Kicki i Tomasz Cabaj](https://github.com/tcabaj/Ruby_2)
 1. [Radosław Gołuński, Patryk Pobłocki, Artur Radomski](https://github.com/ppoblocki/tar-egzamin)
 5. [Jakub Wiśniewski, Aleksandra Tejszerska, Szymon Sędek](https://github.com/jawisniewski/rubyzespolowy)
+6. [Damian Kalinowski, Rafał Lewandowski](https://github.com/lafreak/ruby-proj2)
