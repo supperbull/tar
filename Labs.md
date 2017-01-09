@@ -1,6 +1,6 @@
 ## Laboratoria  2016/17
 
-> Please make sure basic things like spacing, variable naming conventions, line endings, spaces instead of tabs, and the like follow the general style of the project. 
+> Please make sure basic things like spacing, variable naming conventions, line endings, spaces instead of tabs, and the like follow the general style of the project.
 >
 > J. Geerling, [Why I close PRs (project maintainer notes)](http://www.jeffgeerling.com/blog/2016/why-i-close-prs-oss-project-maintainer-notes)
 
@@ -111,15 +111,16 @@ Legenda:
 ### Grupa 1
 
 1. [Wojciech Łojkowski i Kacper Narożnik](https://github.com/knaroznik/Ruby_GameOfLife)
-2. [Jakub Łąkowski](https://github.com/kubalakowski/projekt_ruby)
-3. [Kamil Lubiejewski, Aliaksandr Novik i Jacek Sasin](https://github.com/jsasin/Tar_egzamin)
-4. [Julianna Mikucka](https://github.com/LadyJuleczka/RubyTAR2)
-5. [Adam Makiewicz, Paweł Luszuk, Marcin Lis](https://github.com/marcinlis0/ruby-app)
+1. [Kamil Lubiejewski, Aliaksandr Novik i Jacek Sasin](https://github.com/jsasin/Tar_egzamin)
+1. [Julianna Mikucka](https://github.com/LadyJuleczka/RubyTAR2)
+1. [Adam Makiewicz, Paweł Luszuk, Marcin Lis](https://github.com/marcinlis0/ruby-app)
+1. [Jakub Wiśniewski, Aleksandra Tejszerska, Szymon Sędek](https://github.com/jawisniewski/rubyzespolowy)
+1. [Jakub Łąkowski](https://github.com/kubalakowski/projekt_ruby)
+
 ### Grupa 2
 
 1. [Mateusz Gawin, Jakub Jabłoński, Daria Kotowicz i Magdalena Jędzierowska](https://github.com/matgawin/ruby-projekt2)
 1. [Cwilik Dawid](https://github.com/jodanpotasu/RubyZajecia2)
 1. [Patryk Adler, Michał Byszof, Maksymilian Kicki i Tomasz Cabaj](https://github.com/tcabaj/Ruby_2)
 1. [Radosław Gołuński, Patryk Pobłocki, Artur Radomski](https://github.com/ppoblocki/tar-egzamin)
-5. [Jakub Wiśniewski, Aleksandra Tejszerska, Szymon Sędek](https://github.com/jawisniewski/rubyzespolowy)
-6. [Damian Kalinowski, Rafał Lewandowski](https://github.com/lafreak/ruby-proj2)
+1. [Damian Kalinowski, Rafał Lewandowski](https://github.com/lafreak/ruby-proj2)
