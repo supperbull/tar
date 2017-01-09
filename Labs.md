@@ -114,6 +114,7 @@ Legenda:
 2. [Jakub Łąkowski](https://github.com/kubalakowski/projekt_ruby)
 3. [Kamil Lubiejewski, Aliaksandr Novik i Jacek Sasin](https://github.com/jsasin/Tar_egzamin)
 4. [Julianna Mikucka](https://github.com/LadyJuleczka/RubyTAR2)
+5. [Adam Makiewicz, Paweł Luszuk, Marcin Lis](https://github.com/marcinlis0/ruby-app)
 ### Grupa 2
 
 1. [Mateusz Gawin, Jakub Jabłoński, Daria Kotowicz i Magdalena Jędzierowska](https://github.com/matgawin/ruby-projekt2)
