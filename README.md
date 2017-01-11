@@ -15,7 +15,7 @@
   - [Bundler](http://bundler.io) – provides a consistent environment
     for Ruby projects by tracking and installing the exact gems and
     versions that are needed.
-    - instalacja gemów – [Miejsce na dysku Sigma + Laboratoria](https://inf.ug.edu.pl/aktualizacje-serwera-sigma)  
+    - instalacja gemów – [Miejsce na dysku Sigma + Laboratoria](https://inf.ug.edu.pl/aktualizacje-serwera-sigma)
   - Podstawowe gemy: rspec, [rubocop](http://rubocop.readthedocs.io/en/latest/).
   - [Instalacja edytora Atom](https://atom.io) i rozszerzeń (pakietów):
     * [linter](https://github.com/steelbrain/linter) i
@@ -31,10 +31,18 @@
     [hello_world](wyklady/2-Hello_Bundler/hello_world]),
     [hello_bundler](wyklady/2-Hello_Bundler/hello_bundler).
 1. Wprowadzenie do języka Ruby:
-   - [Try Ruby](http://tryruby.org)
-   - [Learn X in Y minutes][5], where X = Ruby
-   - Learn X in Ruby, where X = [Hash, Array, Enumerable](http://ruby-doc.org/core-2.3.1/)
-   - [How to Solve Coding Anti-Patterns for Ruby Rookies](http://www.sitepoint.com/how-to-solve-coding-anti-patterns-for-ruby-rookies/)
+  - [Try Ruby](http://tryruby.org)
+  - [Learn X in Y minutes][5], where X = Ruby
+  - Learn X in Ruby, where X = [Hash, Array, Enumerable](http://ruby-doc.org/core-2.3.1/)
+  - [How to Solve Coding Anti-Patterns for Ruby Rookies](http://www.sitepoint.com/how-to-solve-coding-anti-patterns-for-ruby-rookies/)
+1. Refaktoryzacja albo przepisywanie kodu:
+  - William C. Wake, Kevin Rutherford.
+   [Refactoring in Ruby](http://www.refactoringinruby.info);
+   [repo with source code](https://github.com/kevinrutherford/rrwb-code);
+   [Ruby refactoring cheatsheet](http://ghendry.net/refactor.html).
+  - [reek](https://github.com/troessner/reek) – code smell detector for Ruby.
+  - [Clean Code JavaScript](https://github.com/ryanmcdermott/clean-code-javascript) –
+   warte przeczytania, chociaż dotyczy języka JavaScript.
 
 ---
 
