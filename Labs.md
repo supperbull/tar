@@ -116,6 +116,7 @@ Legenda:
 1. [Adam Makiewicz, Paweł Luszuk, Marcin Lis](https://github.com/marcinlis0/ruby-app)
 1. [Jakub Wiśniewski, Aleksandra Tejszerska, Szymon Sędek](https://github.com/jawisniewski/rubyzespolowy)
 1. [Jakub Łąkowski](https://github.com/kubalakowski/projekt_ruby)
+1. [Sebastian Majewski](https://github.com/SebastianMajewski/RubyCards)
 
 ### Grupa 2
 
