@@ -126,3 +126,4 @@ Legenda:
 1. [Radosław Gołuński, Patryk Pobłocki, Artur Radomski](https://github.com/ppoblocki/tar-egzamin)
 1. [Damian Kalinowski, Rafał Lewandowski](https://github.com/lafreak/ruby-proj2)
 1. [Dawid Banaszek, Piotr Kawa, Szymon Świstun](https://github.com/Pkawa/ruby-group-project)
+1. [Dziubiński Maciej, Knitter Mateusz](https://github.com/mdziub/ruby2)
